@@ -1,0 +1,39 @@
+{
+  "name": "gulp-go-tools",
+  "description": "Go tools plugin for gulp (gulpjs.com)",
+  "version": "0.0.1",
+  "homepage": "http://github.com/allingeek/gulp-go-tools",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/allingeek/gulp-go-tools.git"
+  },
+  "author": "Jeff Nickoloff jeff@allingeek.com (allingeek.com)",
+  "main": "./index.js",
+  "dependencies": {
+    "any-shell-escape": "^0.1.1",
+    "gulp-util": "^3.0.6",
+    "require-dir": "^0.1.0",
+    "through2": "^0.6.5"
+  },
+  "devDependencies": {
+    "jshint": "^2.8.0",
+    "mocha": "^2.3.0",
+    "rimraf": "^2.4.3",
+    "should": "^7.1.0"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec --timeout 6000 test/main.js && jshint ./index.js ./examples/. ./lib/. ./test/."
+  },
+  "engines": {
+    "node": ">= 0.9.0"
+  },
+  "license": "MIT",
+  "keywords": [
+    "gulp",
+    "go",
+    "golang",
+    "gulpgotools",
+    "gulpplugin",
+    "gulp-plugin"
+  ]
+}
